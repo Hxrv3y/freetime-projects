@@ -13,8 +13,8 @@ def viewAllTasks():
     if tasks:
         for i, task in enumerate(tasks):
             print(f"{i+1}. {task['Task']} - {task['Deadline']} - {task['Priority']} - {task['Category']}")
-        else:
-            print("No tasks found.")
+    else:
+        print("No tasks found.")
             
 def deleteATask():
     if tasks:
